@@ -14,6 +14,8 @@
 		AE6AA8102188C69B00EF96D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6AA80E2188C69B00EF96D8 /* LaunchScreen.storyboard */; };
 		AE6AA81B2188C69B00EF96D8 /* PracAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6AA81A2188C69B00EF96D8 /* PracAlertsTests.swift */; };
 		AE6AA8262188C69B00EF96D8 /* PracAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6AA8252188C69B00EF96D8 /* PracAlertsUITests.swift */; };
+		AE6AA8342188D03900EF96D8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6AA8332188D03900EF96D8 /* ViewController2.swift */; };
+		AE6AA8362188E5E200EF96D8 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6AA8352188E5E200EF96D8 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		AE6AA8022188C69A00EF96D8 /* PracAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6AA8052188C69A00EF96D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE6AA8072188C69A00EF96D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE6AA8072188C69A00EF96D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		AE6AA80A2188C69A00EF96D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE6AA80C2188C69B00EF96D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6AA80F2188C69B00EF96D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		AE6AA8212188C69B00EF96D8 /* PracAlertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracAlertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6AA8252188C69B00EF96D8 /* PracAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracAlertsUITests.swift; sourceTree = "<group>"; };
 		AE6AA8272188C69B00EF96D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6AA8332188D03900EF96D8 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		AE6AA8352188E5E200EF96D8 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				AE6AA8052188C69A00EF96D8 /* AppDelegate.swift */,
 				AE6AA8072188C69A00EF96D8 /* ViewController.swift */,
 				AE6AA8092188C69A00EF96D8 /* Main.storyboard */,
+				AE6AA8352188E5E200EF96D8 /* ViewController3.swift */,
+				AE6AA8332188D03900EF96D8 /* ViewController2.swift */,
 				AE6AA80C2188C69B00EF96D8 /* Assets.xcassets */,
 				AE6AA80E2188C69B00EF96D8 /* LaunchScreen.storyboard */,
 				AE6AA8112188C69B00EF96D8 /* Info.plist */,
@@ -258,6 +264,8 @@
 			files = (
 				AE6AA8082188C69A00EF96D8 /* ViewController.swift in Sources */,
 				AE6AA8062188C69A00EF96D8 /* AppDelegate.swift in Sources */,
+				AE6AA8362188E5E200EF96D8 /* ViewController3.swift in Sources */,
+				AE6AA8342188D03900EF96D8 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +440,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracAlerts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.PracAlerts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +459,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracAlerts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.PracAlerts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
